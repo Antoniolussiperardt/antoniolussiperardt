@@ -19,15 +19,9 @@ Adoro criar sites, projetos práticos e soluções que tenham propósito e funci
 
 - 🔭 Atualmente atuo como criador de landing pages.
 - <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> Gosto de trabalhar com:
-  - 🧠 Lógica de Programação (principalmente com Python)
-  - 📊 Projetos simples de dados e introdução ao BI
-  - 🧩 Atividades práticas, desafios e jogos de lógica
-  - 🎓 Metodologias ativas e projetos educacionais
-- 📝 Crio materiais didáticos, atividades práticas e projetos voltados para facilitar a aprendizagem
-- 👯 Tenho interesse em colaborar em projetos educacionais, especialmente voltados ao ensino de programação e tecnologia
-- 💬 Pergunte-me sobre Python, Algoritmos, GitHub, Portfólio, Lógica de Programação e Educação Tecnológica
+  - 🧠 PHYTON, PHP, javascrypt, HTML e CSS.
+  - 📊 Projetos simples de dados
 - 📙Confira meu portfólio/currículo (https://www.linkedin.com/in/antônio-lussi-perardt)
-- 🎉 Curiosidade: Amo ❤️ Astrofísica e a SpaceX 🚀 e assisto muitos filmes de Ficção Científica 🎬
 
 ---
 
