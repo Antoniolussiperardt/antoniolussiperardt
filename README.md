@@ -11,16 +11,13 @@
 
 ### Um pouco sobre mim... <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> 
 
-Sou professora 🎓, apaixonada por educação e tecnologia, com foco no ensino de Computação e Lógica de Programação.
-Sou uma entusiasta de tecnologia 💻 😃, sempre em busca de aprender, aplicar e ensinar novas ferramentas e conceitos de forma simples e acessível.
-Adoro criar materiais didáticos, projetos práticos e soluções educacionais que tenham propósito e impacto real na aprendizagem dos alunos.
-Sou aluno de técnico em desenvolvimento de sistemas, apaixonado por tecnologia e computação, com foco em Landing pages no momento.
-Sou entusiasta em tecnologia, sempre busco aprender e aplicar novas linguagens de programação e novas ferramentas
+Sou um aluno de técnico em desenvolvimento de sistemas, com foco em landing pages no momento estou sempre em busca de aprender e aplicar conhecimentos novos em meus sites, sempre em busca de aprender novas linguagens de programações 💻 😃,
+Adoro criar sites, projetos práticos e soluções que tenham propósito e funcionalidades ao usuário.
 ---
 
 ## ⚡️ Alguns fatos rápidos
 
-- 🔭 Atualmente atuo como professora, ensinando Tecnologia, Lógica de Programação e Computação para diferentes níveis de ensino
+- 🔭 Atualmente atuo como criador de landing pages.
 - <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> Gosto de trabalhar com:
   - 🧠 Lógica de Programação (principalmente com Python)
   - 📊 Projetos simples de dados e introdução ao BI
