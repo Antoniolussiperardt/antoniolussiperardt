@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Agronomia Corrigido</title>
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --light-green: #e8f5e9;
+            --accent-blue: #bbdefb;
+            --text-dark: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f2f0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .quiz-container {
+            background-color: var(--white);
+            max-width: 500px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-top: 8px solid var(--primary-green);
+        }
+
+        .question { display: none; }
+        .question.active { display: block; }
+
+        .option {
+            background: var(--light-green);
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: 0.2s;
+        }
+
+        .option:hover { background: #d4e8d6; }
+        
+        /* Classe que o JS adiciona ao clicar */
+        .option.selected {
+            border-color: var(--primary-green);
+            background: var(--accent-blue);
+            font-weight: bold;
+        }
+
+        .controls {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        button {
+            padding: 10px 25px;
+            background: var(--primary-green);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #result-area { display: none; text-align: center; }
+        .score { font-size: 2.5rem; color: var(--primary-green); margin: 15px 0; }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <div id="quiz-content">
+        <h1>🌱 Quiz Agronômico</h1>
+        
+        <div class="question active" data-answer="0">
+            <h3>1. Qual a função principal do Nitrogênio (N)?</h3>
+            <div class="option" onclick="pick(this, 0)">Crescimento e cor verde</div>
+            <div class="option" onclick="pick(this, 1)">Apenas raízes</div>
+            <div class="option" onclick="pick(this, 2)">Açúcar nos frutos</div>
+            <div class="option" onclick="pick(this, 3)">Combater fungos</div>
+        </div>
+
+        <div class="question" data-answer="2">
+            <h3>2. O que é a Calagem?</h3>
+            <div class="option" onclick="pick(this, 0)">Irrigação por gotejo</div>
+            <div class="option" onclick="pick(this, 1)">Poda de árvores</div>
+            <div class="option" onclick="pick(this, 2)">Correção da acidez do solo</div>
+            <div class="option" onclick="pick(this, 3)">Colheita de soja</div>
+        </div>
+
+        <div class="controls">
+            <button id="btn-next" onclick="next()">Próxima</button>
+        </div>
+    </div>
+
+    <div id="result-area">
+        <h2>Fim do Quiz!</h2>
+        <div class="score" id="final-score">0</div>
+        <p id="msg"></p>
+        <button onclick="location.reload()">Tentar novamente</button>
+    </div>
+</div>
+
+<script>
+    let current = 0;
+    let totalScore = 0;
+    let selectedIdx = null; // Guarda a escolha atual
+    const questions = document.querySelectorAll('.question');
+
+    function pick(element, idx) {
+        // Limpa seleções anteriores da questão atual
+        const siblings = element.parentElement.querySelectorAll('.option');
+        siblings.forEach(el => el.classList.remove('selected'));
+        
+        // Marca a nova
+        element.classList.add('selected');
+        selectedIdx = idx; // Salva o índice para conferir depois
+    }
+
+    function next() {
+        if (selectedIdx === null) {
+            alert("Por favor, selecione uma resposta antes de continuar!");
+            return;
+        }
+
+        // Verifica se acertou
+        let correct = parseInt(questions[current].getAttribute('data-answer'));
+        if (selectedIdx === correct) {
+            totalScore++;
+        }
+
+        // Reseta seleção para a próxima pergunta
+        selectedIdx = null;
+
+        // Troca de pergunta
+        questions[current].classList.remove('active');
+        current++;
+
+        if (current < questions.length) {
+            questions[current].classList.add('active');
+            if(current === questions.length - 1) {
+                document.getElementById('btn-next').innerText = "Finalizar";
+            }
+        } else {
+            showResult();
+        }
+    }
+
+    function showResult() {
+        document.getElementById('quiz-content').style.display = 'none';
+        document.getElementById('result-area').style.display = 'block';
+        document.getElementById('final-score').innerText = `${totalScore} / ${questions.length}`;
+        
+        const msg = document.getElementById('msg');
+        msg.innerText = totalScore >= 1 ? "Bom trabalho!" : "Precisa estudar mais um pouco!";
+    }
+</script>
+
+</body>
+</html>
