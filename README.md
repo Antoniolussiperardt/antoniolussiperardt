@@ -18,7 +18,7 @@ Adoro criar sites, projetos práticos e soluções que tenham propósito e funci
 
 - 🔭 Atualmente atuo como criador de landing pages.
 - <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> Gosto de trabalhar com:
-  - 🧠 PHYTON, PHP, javascrypt, HTML e CSS.
+  - 🧠 Phyton, PHP, JavaScrypt, HTML e CSS.
   - 📊 Projetos simples de dados
 - 📙Confira meu portfólio/currículo (https://www.linkedin.com/in/antônio-lussi-perardt)
 
