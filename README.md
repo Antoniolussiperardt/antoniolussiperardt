@@ -10,7 +10,7 @@
 
 ### Um pouco sobre mim... <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> 
 
-Sou um aluno de técnico em desenvolvimento de sistemas, com foco em landing pages no momento estou sempre em busca de aprender e aplicar conhecimentos novos em meus sites, sempre em busca de aprender novas linguagens de programações 💻 😃,
+Estudante de Segurança da Informação e Desenvolvimento Web, com foco em criação de sites e práticas de código seguro. Sempre em busca de aprender novas linguagens de programações 💻 😃.
 Adoro criar sites, projetos práticos e soluções que tenham propósito e funcionalidades ao usuário.
 ---
 
